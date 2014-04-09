@@ -425,6 +425,16 @@ class MenuNodeBase implements NodeInterface
     }
 
     /**
+     * Remove a child menu node
+     *
+     * @param MenuNode $child
+     */
+    public function removeChild(MenuNode $child)
+    {
+        $this->children->removeElement($child);
+    }
+
+    /**
      * Gets the route parameters.
      *
      * @return array
